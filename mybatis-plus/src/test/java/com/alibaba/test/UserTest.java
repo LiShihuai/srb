@@ -12,6 +12,7 @@ import org.springframework.boot.test.context.SpringBootTest;
  * @time 2021/7/26
  * @auth lishihuai
  */
+
 @SpringBootTest
 public class UserTest {
 
@@ -20,7 +21,7 @@ public class UserTest {
 
     @Test
     public void findUserById(){
-        User user = userMapper.selectById(1);
+        User user = userMapper.selectById(1L);
         System.out.println(user.toString());
     }
 
